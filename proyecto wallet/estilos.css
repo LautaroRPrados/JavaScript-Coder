@@ -1,0 +1,228 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-image: url(../Imagenes/Crypto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/caja3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.contenedorTodo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.cajaTrasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+
+}
+
+.cajaTrasera div{
+    margin: 100px 40px;
+    color: black;
+    transition: all 1s;
+}
+
+
+.cajaTrasera div p,
+.cajaTrasera button{
+    margin-top: 30px;
+}
+
+.cajaTrasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.cajaTrasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cajaTrasera button{
+    padding: 10px 40px;
+    border: 2px solid black;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transition: all 300ms;
+}
+
+.cajaTrasera button:hover{
+    background: #fff;
+    color: black;
+}
+
+/* formularios */
+
+.login_registrarse{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+}
+    /*La transicion va despues del codigo JS*/
+    /* transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);*/
+
+.login_registrarse form{
+    width: 100%;
+    padding: 80px 20px;
+    background: rgb(247, 112, 63);
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+
+.login_registrarse form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+.login_registrarse form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: wheat;
+    font-size: 16px;
+    outline: none;
+}
+
+.login_registrarse form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background: black;
+}
+
+
+.formulario_login{
+    opacity: 1;
+    display: block;
+}
+.formulario_registrarse{
+    display: none;
+}
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .cajaTrasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .cajaTrasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+     .login_registrarse{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    
+
+    .login_registrarse form{
+        position: relative;
+    }
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.navlinks {
+    flex-direction: row;
+    padding: 10px 45px;
+    justify-content: space-evenly;
+    font-size: 15px;
+    align-self: center;
+    color: r;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+    color: rgb(184, 66, 66);
+}
+
+ul li a:hover {
+    background-color: wheat;
+    color: black;
+}
